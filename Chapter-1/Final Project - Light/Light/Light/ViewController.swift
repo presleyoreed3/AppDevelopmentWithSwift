@@ -24,12 +24,17 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
+        updatedUI()
+    }
+    
+    func updatedUI() {
         if lightOn {
             view.backgroundColor = .white
         }
         else{
             view.backgroundColor = .black
         }
+
     }
 
 }
