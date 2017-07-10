@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var lightButton: UIButton!
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
         updatedUI()
@@ -30,9 +31,11 @@ class ViewController: UIViewController {
     func updatedUI() {
         if lightOn {
             view.backgroundColor = .white
+            lightButton.setTitle("Off", for: .normal)
         }
         else{
             view.backgroundColor = .black
+            lightButton.setTitle("On", for: .normal)
         }
 
     }
