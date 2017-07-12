@@ -12,3 +12,29 @@ By the end of the chapter I had created a light app that switched the IOS device
 
 The first section of this chapter discussed the ins and outs of strings, which by and large reflect what I have know about strings after learnig java. 
 
+the second section of the chapter introduced function notation for Swift which differs in several ways from the previous function notation that I am used to. 
+
+For instance java declares a function like so:
+
+```java
+public boolean is(testing){
+    if (testing){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+```
+
+vs
+
+```swift
+func functionName (parameteres) -> (returnType) {
+
+}
+
+
+
+
+
