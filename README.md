@@ -34,7 +34,4 @@ func functionName (parameteres) -> (returnType) {
 
 }
 
-
-
-
-
+While different, I think that this if then (->) notation serves me well as it has a natural cause and effect process similar to the functional languages that I learned during my junior year (Prolong and Haskell).
