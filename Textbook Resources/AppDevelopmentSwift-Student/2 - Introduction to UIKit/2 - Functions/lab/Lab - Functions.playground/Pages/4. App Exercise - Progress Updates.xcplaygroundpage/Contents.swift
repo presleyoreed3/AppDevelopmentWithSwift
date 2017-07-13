@@ -11,9 +11,37 @@
  */
 
 
+func progressUpdate(steps: Int, goal: Int){
+    switch steps{
+    case 0...9:
+        print("You're off to a good start")
+    case 10...49:
+        print("You're almost half way there!")
+    case 50...89:
+        print("You're more than half way there!")
+    case 90...99:
+        print("You're almost there!")
+    default:
+        print("You beat your goal!")
+    }
+}
+
+
+progressUpdate(steps: 100, goal: 100)
 /*:
  Your fitness tracking app is going to help runners stay on pace to reach their goals. Write a function called pacing that takes four `Double` parameters called `currentDistance`, `totalDistance`, `currentTime`, and `goalTime`. Your function should calculate whether or not the user is on pace to hit or beat `goalTime`. If yes, print "Keep it up!", otherwise print "You've got to push it just a bit harder!"
  */
 
+func pacing(currentDistance: Double, totalDistance: Double, currentTime: Double, goalTime: Double){
+    if (currentDistance<totalDistance){
+        if (currentTime<goalTime){
+            print ("Keep it up!")
+        }
+        else if (currentTime>goalTime){
+            print ("You've got to push it just a bit harder!")
+        }
+    }
+}
 
+pacing(currentDistance: 1.2, totalDistance: 2.0, currentTime: 10.48, goalTime: 12.00)
 //: [Previous](@previous)  |  page 4 of 6  |  [Next: Exercise - Return Values](@next)
